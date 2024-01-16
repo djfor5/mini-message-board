@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  a(href="/new") Create a new message
+  each message, i in messages
+    p Text: #{messages[i].text}
+    p User: #{messages[i].user}
+    p Added: #{messages[i].added}
+  

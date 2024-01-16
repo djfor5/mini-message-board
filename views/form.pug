@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Create a #{title}
+    form(method="POST", action="/new")
+      label Message
+      input(name="messageText")
+      label User
+      input(name="messageUser")
+      button Submit
+  
